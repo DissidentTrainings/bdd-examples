@@ -11,7 +11,7 @@
   "dependencies": {
     "cucumber": "^0.4.7",
     "zombie": "^2.5.1"
-  }
+  },
   "author": "",
   "license": "ISC"
 }
