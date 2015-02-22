@@ -1,14 +1,15 @@
-// features/support/world.js
-module.exports = function() {
-  var zombie = require('zombie');
-  this.World = function World(callback) {
-    this.browser = new zombie(); // this.browser will be available in step definitions
+var zombie = require('zombie');
+var WorldConstructor = function WorldConstructor(callback) {
 
-    this.visit = function(url, callback) {
+  var browser = new zombie();
+
+  var world = {
+    browser: browser,                        // this.browser will be available in step definitions
+    visit: function(url, callback) {         // this.visit will be available in step definitions
       this.browser.visit(url, callback);
-    };
-
-    callback(); // tell Cucumber we're finished and to use 'this' as the world instance
+    }
   };
-}
 
+  callback(world); // tell Cucumber we're finished and to use our world object instead of 'this'
+};
+exports.World = WorldConstructor;
