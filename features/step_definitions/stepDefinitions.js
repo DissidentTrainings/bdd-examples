@@ -12,7 +12,6 @@ var myStepDefinitionsWrapper = function () {
     this.browser.clickLink("Readme.md", function() {
       callback();
     });
-
   });
 
   this.Then(/^I should see "([^"]*)"$/, function (arg1, callback) {
