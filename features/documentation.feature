@@ -1,3 +1,4 @@
+@docs
 Feature: Example feature
   As a participant of  the bdd workshop
   I want to have documentation on the used examples
@@ -6,4 +7,4 @@ Feature: Example feature
   Scenario: Reading documentation
     Given I am on the bdd-examples GitHub repository
     When I go to the README file
-    Then I should see "BDD Workshop Examples" as the page title
+    Then I should see "BDD Workshop Examples"

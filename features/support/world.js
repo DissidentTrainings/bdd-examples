@@ -1,7 +1,7 @@
 var zombie = require('zombie');
 var WorldConstructor = function WorldConstructor(callback) {
 
-  var browser = new zombie();
+  var browser = new zombie({ debug: true, runScripts: false });
   browser.silent = true;
   var world = {
     browser: browser,                        // this.browser will be available in step definitions
