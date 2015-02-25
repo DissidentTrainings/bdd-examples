@@ -16,7 +16,6 @@ var myStepDefinitionsWrapper = function () {
 
   this.Then(/^I should see "([^"]*)"$/, function (arg1, callback) {
     var findings = this.browser.html().match(arg1);
-
     if (findings === null) {
       callback.fail();
     } else {
