@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cucumber": "^0.4.7",
+    "cucumber": "^0.6.0",
     "zombie": "^5.0.0"
   }
 }
